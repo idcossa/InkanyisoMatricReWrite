@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inkanyiso</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/IMReWrite.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>        
+        <a href="aboutus.html" >about</a>
+        <a href="contact.html" >contact</a>
+        <a href="faq.html" >Faq</a>
+        <a href="staff.html" >Staff</a>
+        <a href="students.html" class="btn_active">students</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <!--<div class="fas fa-shopping-cart" id="cart-btn"></div> REMOVE--> 
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label type="submit" for="search-box" class="fas fa-search"></label>
+    </div>    
+
+</header>
+<!-- header section ends -->
+
+
+<!-- video scripting start -->
+<section class="video_container">
+    <video autoplay muted loop id="myVideo">
+        <source src="active_image/Honour.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <button id="pausing_video" onclick="myFunction()">Pause</button>
+    
+</section>
+<br>
+<br>
+<!-- video scripting end -->
+
+
+<!-- reviews section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span></span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/rd_man.png" alt="">
+            </div>
+            <div class="content">                
+                <span></span>
+                <p></p>
+                <!--<a href="#" class="btn">read more</a>-->
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span>past exam papers</span>
+                                 
+                <li><a href="/past_papers.html/agriculture.html"><button  class="subject-link">Agricultural Sciences</button> </a></li>                
+                <li> <a href="/past_papers.html/geography.html"><button class="subject-link">Geography </button></a></li>
+                <li> <a href="/past_papers.html/life_science.html"><button class="subject-link">Life Sciences</button></a></li> 
+                <li> <a href="/past_papers.html/mathematics.html"><button class="subject-link">Mathematics</button></a></li>                   
+                <li><a href="/past_papers.html/physics.html"><button class="subject-link">Physical Sciences</button></a></li>
+                <li><a href="/past_papers.html/history.html"><button class="subject-link">History</button></a></li> 
+                              
+                <!--<a href="#" class="btn">read more</a>-->
+            </div>
+        </div> 
+        <div class="box">            
+            <div class="content">
+                <span>past exam papers</span>                
+                
+                <li><a href="/past_papers.html/accounting.html"><button  class="subject-link">Accounting</button></a></li>                 
+                <li><a href="/past_papers.html/business_stu.html"><button  class="subject-link">Business Studies</button></a></li>
+                <li><a href="/past_papers.html/economics.html"><button  class="subject-link">Economics</button></a></li>
+                <li><a href="/past_papers.html/english.html"><button  class="subject-link">English</button></a></li>                  
+                <li><a href="/past_papers.html/mathematic_lit.html"><button  class="subject-link">Mathematics Literacy</button></a></li>
+                <li><a href="/past_papers.html/tourism.html"><button  class="subject-link">Tourism</button></a></li>
+                    
+                               
+                <!--<a href="#" class="btn">read more</a>-->
+            </div>
+        </div>         
+    </div>
+
+</section>
+<!-- blogs section ends -->
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.facebook.com/?_rdc=2&_rdr" class="fab fa-facebook-f" target="_blank"></a>
+        <a href="https://twitter.com/?lang=en-za"  class="fab fa-twitter" target="_blank"></a>
+        <!--<a href="#" class="fab fa-instagram"></a>-->
+        <!--<a href="#" class="fab fa-linkedin"></a>-->
+        <a href="https://wa.link/92624e" class="fab fa-whatsapp" target="_blank"></a>
+    </div>
+
+    <div class="links">
+        <a href="index.html">home</a>
+        <a href="aboutus.html">about</a>      
+        <a href="contact.html">contact</a>
+        <a href="faq.html">faq</a>
+        <a href="staff.html">staff</a> 
+        <a href="students.html">students</a>     
+    </div>
+
+    <div class="credit">created by <span>inkanyiso matric rewrite</span> | all rights reserved</div>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+
+<!-- video scripting start  -->
+<script>
+    var video = document.getElementById("myVideo")
+    var butn = document.getElementById("pausing_video")  
+    
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        }
+        else{
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
+</script>
+<!-- video scripting end  -->
+ 
+ 
+
+</html>

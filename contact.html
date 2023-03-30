@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inkanyiso</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>			
+		
+</head>
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/IMReWrite.png" alt="">
+    </a>
+    
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="aboutus.html">about</a>
+        <a href="contact.html" class="btn_active">contact</a>
+        <a href="faq.html">Faq</a>
+        <a href="staff.html">Staff</a>
+        <a href="students.html">students</a>
+    </nav>
+    
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <!--<div class="fas fa-shopping-cart" id="cart-btn"></div> REMOVE--> 
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+    
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div> 
+</header>
+
+    
+<body>
+    <!-- map section starts  -->
+<section>
+    <section class="contact-image-background">
+        <!--<div id="mapid"></div>-->
+        <div >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11753.59398226149!2d31.833114382627464!3d-28.857777539141335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x528522fd6766b69c!2sInkanyiso%20Matric%20ReWrite!5e0!3m2!1sen!2sza!4v1656704221243!5m2!1sen!2sza" width="100%" height="450" style="border:2px solid rgb(5, 5, 5); margin-top: 5%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </section>        
+    <!-- map section end  -->
+
+    <!-- External google link  -->           
+    <section class="contact-image-background">
+        <h1 class="google_link"> 
+            <span class="google_link">
+                <i><a class="google_link" href="https://www.google.com/maps/dir//-28.860237,31.8380509/@-28.8602159,31.8389008,526m/data=!3m1!1e3!4m2!4m1!3e0" target="_blank">Google Map and Navigation</a></i> 
+            </span> 
+        </h1>
+    </section>
+            
+
+    <!-- form section starts  -->        
+    <section class="contact-image-background">
+        <!--CONTACT FORM client can fill up their details and send a communication, it will be directed to idcossa@gmail.com ------------Post is used than get--->
+        <section class="wrapper">
+            <form action="https://formspree.io/f/xbjpqklg" method="POST" id="my-form">
+                <div class="contact-form">
+                    <p><span class="error">required fields are indicated with *</span></p>
+
+                    <p class="clabel">
+                        <label for="fname">First Name*</label><br>
+                        <p class="cinput">
+                            <input type="text" id="fname" name="fname" placeholder="" required="yes"><br>
+                        </p>
+                    </p>
+                        
+
+                    <p class="clabel"> 
+                        <label for="surname">Surname *</label><br>
+                        <p class="cinput">
+                            <input type="text" id="surname" name="surname" placeholder="" required="yes"><br>
+                        </p>
+                    </p>
+
+                    <p class="clabel">
+                        <label for="gender">Gender</label><br>
+                        <p class="cinput">
+                            <select name="gender" id="gender"><br>
+                                <option value=" "></option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                             </select><br>
+                        </p>
+                    </p> 
+
+                    <p class="clabel">
+                        <label for="phone">Phone Number*</label><br>
+                        <p class="cinput">
+                            <input type="text" id="phonenumber" name="phonenumber" placeholder="" required="yes"><br>
+                        </p>
+                    </p>
+
+                    <p class="clabel">
+                        <label for="email">Email Address</label><br>
+                        <p class="cinput">
+                            <input type="text" id="email" name="email" placeholder=""><br>
+                        </p>
+                    </p>
+
+                    <p class="clabel">
+                        <label for="subject">Subject</label><br>
+                        <p class="cinput">
+                            <input type="text" id="subject" name="subject" placeholder="2023 Registration"><br>
+                        </p>
+                    </p>
+
+                           
+                    <fieldset class="clabel">
+                        <legend class="interest_options" >Which Field are You Intersted In?</legend>
+                
+                        <div class="clabel">
+                            <label for="thischecked">Acceptance</label> 
+                            <input type="checkbox" id="checkbox" name="checkboxlist" value="Acceptance"><br>
+                        </div >
+                
+                        <div class="clabel">
+                            <label for="thischecked">Registration</label>
+                            <input type="checkbox" id="checkbox" name="checkboxlist" value="Registration"><br>
+                        </div >
+                
+                        <div class="clabel">
+                            <label for="thischecked">Learning</label>
+                            <input type="checkbox" id="checkbox" name="checkboxlist" value="Learning"><br>
+                        </div >
+                
+                        <div class="clabel">
+                            <label for="thischecked">Teaching</label>
+                            <input type="checkbox" id="checkbox" name="checkboxlist" value="Teaching"><br>
+                        </div >
+                
+                        <div class="clabel">
+                            <label for="thischecked">Guidance</label>
+                            <input type="checkbox" id="checkbox" name="checkboxlist" value="Guidance"><br>
+                        </div >
+            
+                    </fieldset>
+                           
+
+                    <p class="clabel">
+                        <label for="message">Message</label><br>
+                        <p class="cinput">
+                            <textarea name="subject" id="subject" placeholder="How May We Help You ?" cols="30" rows="10" style="height: 200px;"></textarea><br>
+                        </p>	
+                    </p>
+                    <br>
+                        <input type="reset" value="clear form">                          
+                        <button type="submit" class="submit-btn">Submit</button type="reset">                                                   
+                    </div>
+
+                <div id="status"></div>
+            </form>
+
+            <nav class="whatsapplink">
+                <a href="https://wa.link/92624e" target="_blank" class="whatsapp">Contacts Us Via WhatsApp</a> <!--WhatsApp message will be directed to Shandu 0739934175--->					
+            </nav>
+        </section>
+    </section>
+</section>
+<!-- form section end  -->
+
+
+<!-- get in touch contact details start  -->
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>get in</span> touch </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/deskpoint.png" alt="">
+        </div>
+
+        <div class="content">
+            <p>mr. t mathaba <br>cell: +27 82 341 9846 <br><a href="mailto:mathabaThembinkosi@gmail.com?Subject=Subject IMR Upgrading">mathabaThembinkosi@gmail.com</a></p>
+            <p>mr. d shandu <br>cell: +27 73 993 4175 <br><a href="mailto:idecossa@gmail.com?Subject=Subject IMR Upgrading">idcossa@gmail.com</a></p>
+            <p>
+                <address>
+                   <p>Kwa-Dlangezwa (Vulindlela) <br> Inkanyiso Matric ReWrite <br> 3886 <br><a href="mailto:inkanyisomrw@gmail.com?Subject=Subject IMR Upgrading">inkanyisomrw@gmail.com</a></p>
+                
+                </address>
+            </p>
+            <a href="contact.html" class="btn">get more</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- get in touchcontact details end -->
+
+
+
+<!-- footer section starts  -->
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.facebook.com/?_rdc=2&_rdr" class="fab fa-facebook-f" target="_blank"></a>
+        <a href="https://twitter.com/?lang=en-za"  class="fab fa-twitter" target="_blank"></a>
+        <!--<a href="#" class="fab fa-instagram"></a>-->
+        <!--<a href="#" class="fab fa-linkedin"></a>-->
+        <a href="https://wa.link/92624e" class="fab fa-whatsapp" target="_blank"></a>
+    </div>
+
+    <div class="links">
+        <a href="index.html">home</a>
+        <a href="aboutus.html">about</a>      
+        <a href="contact.html">contact</a>
+        <a href="faq.html">faq</a>
+        <a href="staff.html">staff</a>  
+        <a href="students.html">students</a>     
+    </div>
+
+    <div class="credit">created by <span>inkanyiso matric rewrite</span> | all rights reserved</div>
+
+</section>
+<!-- footer section ends -->
+
+
+</body>
+
+
+<!--Script that shows the map for my business location, it uses lat and long-->	
+<script>		
+	var mymap = L.map("mapid").setView([-28.860010, 31.838004], 20);
+	L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',		
+	{
+		maxZoom: 17,
+		attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);	
+		
+	L.control.scale({
+		metric: true,
+		imperial: false,
+	}).addTo(mymap);
+		 
+	//--EShowe Branch-->
+	var marker = L.marker([-28.860010, 31.838004] ,{
+		title:"iNkanyiso Matric ReWrite: Khandisa Primary School",			
+	}).addTo(mymap)		
+	.bindPopup("<b>Inkanyiso Matric Rewrite</b><hr> <i> Empangeni, Vulindlela</uL></i> <br> Finishing School <address><br><br></address> <br>");
+				 
+</script>		 
+		 
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+</html>
