@@ -261,7 +261,7 @@ section{
     min-height: 90vh;
     display:flex;
     align-items: center;
-    background:url(/images/steps-edit.png) no-repeat;
+    background:url(/images/steps-edit2.png) no-repeat;
     background-size:cover; /*cover*/
     background-position: left; /*center*/
 }
