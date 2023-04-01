@@ -263,7 +263,7 @@ section{
     align-items: center;
     background:url(/images/steps-edit2.png) no-repeat;
     background-size:cover; /*cover*/
-    background-position: left; /*center*/
+    background-position: left; 
 }
 
 .home .content{
