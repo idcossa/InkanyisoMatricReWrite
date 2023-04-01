@@ -261,14 +261,13 @@ section{
     min-height: 90vh;
     display:flex;
     align-items: center;
-    background:url(/images/steps.jpg) no-repeat;
+    background:url(/images/steps-edit2.png) no-repeat;
     background-size:cover; /*cover*/
     background-position: left; /*center*/
 }
 
 .home .content{
-    max-width: 60rem;
-    
+    max-width: 60rem;    
 }
 
 .home .content h3{
@@ -284,8 +283,7 @@ section{
     line-height: 1.8;
     padding:1rem 0;
     color:#eee;
-    
-    
+       
 }
 
 
