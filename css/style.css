@@ -795,6 +795,51 @@ section{
 
 }
 
+/* Additional open and Shows box 2*/
+.questions_container{
+}
+.question{
+    font-size: 2rem;
+    color: var(--main-color);
+    text-decoration: none;
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.answer_box{
+    background-color: #0d0d0e;    
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family:fantasy;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #fff;
+    border-radius: 0.4rem;    
+    overflow: hidden;
+    position: relative;   
+}
+.answer_box::before{   
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);  
+        
+}
+.answer{
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 2rem;
+}
+
 /*******************************************/
 
 
