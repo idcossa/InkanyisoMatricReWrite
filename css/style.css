@@ -261,7 +261,7 @@ section{
     min-height: 90vh;
     display:flex;
     align-items: center;
-    background:url(/images/steps.jpg) no-repeat;
+    background:url(/images/steps-edit2.png) no-repeat;
     background-size:cover; /*cover*/
     background-position: left; 
 }
@@ -805,9 +805,10 @@ section{
     background-color: #000;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
+    justify-content: space-between;    
+    padding: 2rem;
 }
+
 .answer_box{
     background-color: #0d0d0e;    
     font-family: 'Roboto', sans-serif;
@@ -1049,7 +1050,7 @@ faq method without script end */
     background-size: cover;
 }
 .contact-image-background {
-    background-image: url("/images/steps.jpg");    
+    background-image: url("/images/steps-edit.jpeg");    
 } 
 .wrapper{    
     box-sizing: border-box;
