@@ -796,8 +796,7 @@ section{
 }
 
 /* Additional open and Shows box 2*/
-.questions_container{
-}
+
 .question{
     font-size: 2rem;
     color: var(--main-color);
